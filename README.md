@@ -1,6 +1,6 @@
 # Whatickect OneZape v2
 
-Ajustes efetuados:
+^Ajustes efetuados:
 
 - Adicionado logos
 - Corrigido mensagem duplicada na lista de tickets
