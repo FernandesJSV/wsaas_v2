@@ -46,6 +46,7 @@ const useStyles = makeStyles((theme) => ({
 
   toolbar: {
     paddingRight: 24, // keep right padding when drawer closed
+    background: "linear-gradient(to right, #242424, #045ada)",
   },
   toolbarIcon: {
     display: "flex",
@@ -77,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
-    fontSize: 14,
+    fontSize: 18,
   },
   drawerPaper: {
     position: "relative",
@@ -256,16 +257,17 @@ const LoggedInLayout = ({ children }) => {
               drawerOpen && classes.menuButtonHidden
             )}
           >
-            <MenuIcon />
+            <MenuIcon style={{ color: "#61abff" }} />
           </IconButton>
           <Typography
             color="#FFFFFF"
             noWrap
             className={classes.title}
+            
           >
             {greaterThenSm ? (
               <>
-                ⭐ Olá <b>{user.name}</b>, seja bem vindo ao Multi-Atendimento.
+                Olá, <b>{user.name}</b>! Seja bem vindo ao OneZape! 🤍💙
               </>
             ) : (
               user.name
@@ -284,7 +286,7 @@ const LoggedInLayout = ({ children }) => {
               aria-haspopup="true"
               onClick={handleMenu}
               variant="contained"
-
+              style={{ color: "#4ad66f" }}
             >
               <AccountCircle />
             </IconButton>
